@@ -1,0 +1,256 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* 상세 정보 스타일 */
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+/* 수정하기 버튼 */
+.edit-button {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+/* 폼 스타일은 기존 작성 폼과 동일 */
+
+/* 카테고리 버튼 컨테이너 */
+.category-buttons {
+    display: flex;
+    justify-content: flex-start; /* 버튼을 왼쪽으로 정렬 */
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* 버튼이 많을 경우 줄바꿈 */
+}
+
+/* 카테고리 버튼 스타일 */
+.category-button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.category-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.category-button:focus {
+    background-color: #007bff;
+    color: white;
+    outline: none;
+}
+
+strong {
+    color: #007bff;
+}
+
+/* 리스트 스타일 */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: #e2e8f0;
+}
+
+li a:hover {
+    color: #0056b3;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* 작성 페이지 이동 버튼 */
+.create-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.create-button:hover {
+    background-color: #218838;
+}
+
+
+/* 공통 폼 스타일 */
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* 제목 필드 */
+.title-field input {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* 작성자 필드 */
+.author-field input {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* 내용 필드 */
+.content-field textarea {
+    resize: none;
+    height: 300px;
+}
+
+/* 카테고리 필드 */
+.category-field input {
+    font-size: 14px;
+}
+/* 페이지네이션 컨테이너 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+/* 페이지 버튼 */
+.page-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.page-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* 버튼 컨테이너 */
+.submit-button-container {
+    text-align: right;
+}
+
+.submit-button-container .submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button-container .submit-button:hover {
+    background-color: #218838;
+}
